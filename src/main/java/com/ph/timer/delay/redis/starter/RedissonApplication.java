@@ -1,4 +1,4 @@
-package com.ph.timer.delay.redis;
+package com.ph.timer.delay.redis.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

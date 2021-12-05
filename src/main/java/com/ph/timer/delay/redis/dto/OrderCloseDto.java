@@ -1,4 +1,4 @@
-package com.ph.timer.delay.redis;
+package com.ph.timer.delay.redis.dto;
 
 import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author cdl
  */
-public class OrderDto implements Serializable {
+public class OrderCloseDto implements Serializable {
 
     private String orderNo;
 
@@ -14,13 +14,13 @@ public class OrderDto implements Serializable {
 
     private TimeUnit unit;
 
-    public OrderDto(String orderNo, long delay){
+    public OrderCloseDto(String orderNo, long delay){
         this.orderNo = orderNo;
         this.delay = delay;
         this.unit = TimeUnit.SECONDS;
     }
 
-    public OrderDto(String orderNo, long delay, TimeUnit unit) {
+    public OrderCloseDto(String orderNo, long delay, TimeUnit unit) {
         this.orderNo = orderNo;
         this.delay = delay;
         this.unit = unit;
